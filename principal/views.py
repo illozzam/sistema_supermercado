@@ -4,7 +4,7 @@ from .models import Supermercado, Produto
 
 class InicialView(View):
     dados = {}
-    template = 'principal/base.html'
+    template = 'principal/pagina.html'
 
     def get(self, request, **kwargs):
         return render(request, self.template, self.dados)
